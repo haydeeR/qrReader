@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		9B1365A321121EFF000639E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1365A221121EFF000639E7 /* Assets.xcassets */; };
+		9B1365A521123328000639E7 /* MenuCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1365A421123328000639E7 /* MenuCollectionViewController.swift */; };
+		9B1365A82112334F000639E7 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B1365A62112334F000639E7 /* ItemCollectionViewCell.xib */; };
+		9B1365A92112334F000639E7 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1365A72112334F000639E7 /* ItemCollectionViewCell.swift */; };
+		9B1365AC2112337E000639E7 /* UICollectionViewCell+ReusableId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1365AB2112337E000639E7 /* UICollectionViewCell+ReusableId.swift */; };
 		9BA80613210D1BF4008F8BFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA80612210D1BF4008F8BFC /* AppDelegate.swift */; };
-		9BA80615210D1BF4008F8BFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA80614210D1BF4008F8BFC /* ViewController.swift */; };
+		9BA80615210D1BF4008F8BFC /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA80614210D1BF4008F8BFC /* QRViewController.swift */; };
 		9BA80618210D1BF4008F8BFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA80616210D1BF4008F8BFC /* Main.storyboard */; };
 		9BA8061D210D1BF7008F8BFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8061B210D1BF7008F8BFC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9B1365A221121EFF000639E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B1365A421123328000639E7 /* MenuCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewController.swift; sourceTree = "<group>"; };
+		9B1365A62112334F000639E7 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		9B1365A72112334F000639E7 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		9B1365AB2112337E000639E7 /* UICollectionViewCell+ReusableId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+ReusableId.swift"; sourceTree = "<group>"; };
 		9BA8060F210D1BF4008F8BFC /* qrReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qrReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA80612210D1BF4008F8BFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9BA80614210D1BF4008F8BFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BA80614210D1BF4008F8BFC /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		9BA80617210D1BF4008F8BFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BA8061C210D1BF7008F8BFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BA8061E210D1BF7008F8BFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B1365AA21123358000639E7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9B1365AB2112337E000639E7 /* UICollectionViewCell+ReusableId.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		9BA80606210D1BF4008F8BFC = {
 			isa = PBXGroup;
 			children = (
@@ -67,7 +83,8 @@
 		9BA80624210D3150008F8BFC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9BA80614210D1BF4008F8BFC /* ViewController.swift */,
+				9BA80614210D1BF4008F8BFC /* QRViewController.swift */,
+				9B1365A421123328000639E7 /* MenuCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -75,6 +92,8 @@
 		9BA80626210D317C008F8BFC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9B1365A62112334F000639E7 /* ItemCollectionViewCell.xib */,
+				9B1365A72112334F000639E7 /* ItemCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -82,6 +101,7 @@
 		9BA80627210D318F008F8BFC /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				9B1365AA21123358000639E7 /* Extension */,
 				9B1365A221121EFF000639E7 /* Assets.xcassets */,
 			);
 			path = Utilities;
@@ -155,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BA8061D210D1BF7008F8BFC /* LaunchScreen.storyboard in Resources */,
+				9B1365A82112334F000639E7 /* ItemCollectionViewCell.xib in Resources */,
 				9B1365A321121EFF000639E7 /* Assets.xcassets in Resources */,
 				9BA80618210D1BF4008F8BFC /* Main.storyboard in Resources */,
 			);
@@ -167,8 +188,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BA80615210D1BF4008F8BFC /* ViewController.swift in Sources */,
+				9B1365A521123328000639E7 /* MenuCollectionViewController.swift in Sources */,
+				9B1365A92112334F000639E7 /* ItemCollectionViewCell.swift in Sources */,
+				9BA80615210D1BF4008F8BFC /* QRViewController.swift in Sources */,
 				9BA80613210D1BF4008F8BFC /* AppDelegate.swift in Sources */,
+				9B1365AC2112337E000639E7 /* UICollectionViewCell+ReusableId.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
